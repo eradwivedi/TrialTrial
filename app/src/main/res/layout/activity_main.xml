@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#FACC2E">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:autoText="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/textView"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textColor="#424242" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/textView2"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText"
+        android:textColor="#424242"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Want to be healthy? Register!"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textColor="#0174DF"/>
+
+</RelativeLayout>
